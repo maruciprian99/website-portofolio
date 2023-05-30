@@ -33,7 +33,7 @@ const Projects = () => {
           and the adventures he encounters, as well as developing and verifying his
           knowledge. through mission questions."
           src={projectOne}
-          githubUrl="https://github.com/maruciprian99/UNITY-GAME"
+          
           websiteUrl="https://drive.google.com/drive/folders/1Lhium2F4GzysW6G4xggkgPvgPyCon45X?usp=sharing"
         />
         <ProjectsCard
