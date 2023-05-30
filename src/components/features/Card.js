@@ -15,9 +15,7 @@ const Card = ({ item: { title, des, icon } }) => {
     setIsExpanded(!isExpanded);
   };
 
-  const handleScroll = () => {
-    contentRef.current.scrollTo(0, 0);
-  };
+  
 
   const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
