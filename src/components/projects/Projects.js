@@ -48,7 +48,6 @@ const Projects = () => {
           
           Steps Involved Connect to SVN, GIT, Jira, SQL server/database using Python scripts. (paramiko/pyodbc) Collect desired data by creating MySQL queries from the servers/db and export locally using Python scripts. Create scripts to process raw data into final digital form using Pandas/NumPy. Creating a portable (.exe) application that allows the user to receive the desired processed data. Libraries Used Pandas - for processing and manipulating data. NumPy - for numerical computing and data analysis. PyODBC - for connecting to SQL Server. SQLAlchemy - for connecting to various databases. Paramiko - for connecting to servers (SSH)."
           src={projectTwo}
-          websiteUrl="https://ciprianmaru.netlify.app/"
           githubUrl="https://github.com/maruciprian99/DATA_ETL_Project"
           
         />
@@ -58,7 +57,7 @@ const Projects = () => {
           The website portfolio is a dynamic showcase built with React, Tailwind CSS, JavaScript, HTML, and Bootstrap. This combination of modern technologies and frameworks allows for a visually appealing and interactive user experience. With seamless navigation, responsive design, and smooth animations, the portfolio effectively highlights the creator's talents and projects while demonstrating their proficiency in front-end development."
           src={projectThree}
           githubUrl="https://github.com/maruciprian99/website-portofolio"
-          websiteUrl="https://your-website.com/social-media-clone"
+          websiteUrl="https://ciprianmaru.netlify.app"
         />
         
       </div>
