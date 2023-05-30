@@ -18,7 +18,7 @@ const Education = () => {
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="BSc in Telecomunications and Telecomunications Systems"
-            subTitle="2018-2012"
+            subTitle="2018-2022"
             result="Transilvania University: Faculty of Electrical Engineering and Computer Science"
             des={<a href="https://iesc.unitbv.ro/ro/" target="_blank" rel="noopener noreferrer">UNITBV IESC Website</a>}
 
