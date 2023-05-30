@@ -57,7 +57,7 @@ const Projects = () => {
           The website portfolio is a dynamic showcase built with React, Tailwind CSS, JavaScript, HTML, and Bootstrap. This combination of modern technologies and frameworks allows for a visually appealing and interactive user experience. With seamless navigation, responsive design, and smooth animations, the portfolio effectively highlights the creator's talents and projects while demonstrating their proficiency in front-end development."
           src={projectThree}
           githubUrl="https://github.com/maruciprian99/website-portofolio"
-          websiteUrl="https://ciprianmaru.netlify.app"
+          websiteUrl="https://ciprianmaru.com/"
         />
         
       </div>
