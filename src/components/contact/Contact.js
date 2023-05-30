@@ -6,15 +6,32 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [errMsg, setErrMsg] = useState('');
+  const [successMsg, setSuccessMsg] = useState('');
+
+  const emailValidation = () => {
+    return String(email)
+      .toLocaleLowerCase()
+      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  };
 
   const handleSend = (e) => {
     e.preventDefault();
-  
-    const emailLink = `mailto:maruciprian99@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(message)}`;
-  
-    window.open(emailLink, '_blank');
+    if (email === '') {
+      setErrMsg('Please provide your email!');
+    } else if (!emailValidation(email)) {
+      setErrMsg('Please provide a valid email!');
+    } else if (subject === '') {
+      setErrMsg('Please provide a subject!');
+    } else if (message === '') {
+      setErrMsg('Message is required!');
+    } else {
+      setErrMsg('Function not implemented yet');
+      setSuccessMsg('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    }
   };
 
   return (
@@ -27,6 +44,16 @@ const Contact = () => {
           <ContactLeft />
           <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
             <form className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
+              {errMsg && (
+                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
+                  {errMsg}
+                </p>
+              )}
+              {successMsg && (
+                <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-green-500 text-base tracking-wide animate-bounce">
+                  {successMsg}
+                </p>
+              )}
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
                   Email
@@ -34,7 +61,10 @@ const Contact = () => {
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  className="contactInput"
+                  className={`${
+                    errMsg === 'Please provide your email!' &&
+                    'outline-designColor'
+                  } contactInput`}
                   type="email"
                 />
               </div>
@@ -45,7 +75,10 @@ const Contact = () => {
                 <input
                   onChange={(e) => setSubject(e.target.value)}
                   value={subject}
-                  className="contactInput"
+                  className={`${
+                    errMsg === 'Please provide a subject!' &&
+                    'outline-designColor'
+                  } contactInput`}
                   type="text"
                 />
               </div>
@@ -56,7 +89,9 @@ const Contact = () => {
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
-                  className="contactTextArea"
+                  className={`${
+                    errMsg === 'Message is required!' && 'outline-designColor'
+                  } contactTextArea`}
                   cols="30"
                   rows="8"
                 ></textarea>
