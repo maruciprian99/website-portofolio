@@ -45,7 +45,6 @@ const Navbar = () => {
         <span
           onClick={() => setShowMenu(!showMenu)}
           className="text-xl mdl:hidden bg-black w-10 h-10 inline-flex items-center justify-center rounded-full text-designColor cursor-pointer"
-          // Add hover effect
           onMouseEnter={() => setShowMenu(true)}
           onMouseLeave={() => setShowMenu(false)}
         >
@@ -106,6 +105,7 @@ const Navbar = () => {
               >
                 <MdClose />
               </span>
+              <h2 className="text-white text-base font-normal tracking-wide text-center">In progress...</h2>
             </div>
           </div>
         )}

@@ -53,29 +53,31 @@ const ProjectsCard = ({ title, des, src, githubUrl, websiteUrl }) => {
               )}
             </div>
           </div>
-          <p
-            className={`text-sm tracking-wide mt-3 ${
-              expanded ? '' : 'line-clamp-3'
-            } hover:text-gray-100 duration-300`}
-          >
-            {des}
-          </p>
-          {!expanded && (
-            <button
-              className="text-sm text-designColor mt-2 hover:underline focus:outline-none"
-              onClick={toggleExpand}
+          <div className="flex flex-col">
+            <p
+              className={`text-sm tracking-wide mt-3 ${
+                expanded ? '' : 'line-clamp-3'
+              } hover:text-gray-100 duration-300`}
             >
-              Read More
-            </button>
-          )}
-          {expanded && (
-            <button
-              className="text-sm text-designColor mt-2 hover:underline focus:outline-none"
-              onClick={toggleExpand}
-            >
-              Collapse
-            </button>
-          )}
+              {des}
+            </p>
+            {!expanded && (
+              <button
+                className="text-sm text-designColor mt-2 hover:underline focus:outline-none self-start"
+                onClick={toggleExpand}
+              >
+                Read More
+              </button>
+            )}
+            {expanded && (
+              <button
+                className="text-sm text-designColor mt-2 hover:underline focus:outline-none self-start"
+                onClick={toggleExpand}
+              >
+                Collapse
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
