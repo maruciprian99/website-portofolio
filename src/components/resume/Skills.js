@@ -120,7 +120,7 @@ const Skills = () => {
             </span>
           </div>
           <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">Machine Learning(Scikit-learn, TensorFlow, PyTorch)</p>
+            <p className="text-sm uppercase font-medium">Machine Learning(Scikit-learn, TensorFlow)</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
                 initial={{ x: "-100%", opacity: 0 }}
@@ -133,7 +133,7 @@ const Skills = () => {
             </span>
           </div>
           <div className="overflow-x-hidden">
-            <p className="text-sm uppercase font-medium">AI ( NumPy, Pandas, Matplotlib, Seaborn, NLTK)</p>
+            <p className="text-sm uppercase font-medium">AI ( NumPy, Pandas, Matplotlib, Seaborn)</p>
             <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
               <motion.span
                 initial={{ x: "-100%", opacity: 0 }}
