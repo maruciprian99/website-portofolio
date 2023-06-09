@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../layouts/Title'
-import { projectOne, projectTwo, projectThree } from "../../assets/index";
+import { projectOne, projectTwo, projectThree,projectFour } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
@@ -49,6 +49,22 @@ const Projects = () => {
           Steps Involved Connect to SVN, GIT, Jira, SQL server/database using Python scripts. (paramiko/pyodbc) Collect desired data by creating MySQL queries from the servers/db and export locally using Python scripts. Create scripts to process raw data into final digital form using Pandas/NumPy. Creating a portable (.exe) application that allows the user to receive the desired processed data. Libraries Used Pandas - for processing and manipulating data. NumPy - for numerical computing and data analysis. PyODBC - for connecting to SQL Server. SQLAlchemy - for connecting to various databases. Paramiko - for connecting to servers (SSH)."
           src={projectTwo}
           githubUrl="https://github.com/maruciprian99/DATA_ETL_Project"
+          
+        />
+
+        <ProjectsCard
+          title="EDA - Exploratory Data Analysis"
+          des=" This application leverages the principles of Exploratory Data Analysis (EDA) to automatically analyze any given dataset. The application provides a comprehensive set of standard key performance indicators (KPIs) and analysis, which can be presented in various formats, including informative text, charts, and other visualizations. With the integration of these technologies, users can gain valuable insights into their data effortlessly.
+
+          Was created using:
+         - Python: The programming language used as the core of the application.
+         - Streamlit: A Python library used for building interactive web applications.
+         - Pandas Profiling: A library for generating detailed exploratory data analysis reports.
+         - JavaScript: A programming language used for adding interactivity and dynamic features to the app.
+         - CSS: Cascading Style Sheets used for styling and formatting the visual elements of the app."
+          src={projectFour}
+          websiteUrl="https://maruciprian99-eda-app-1ssrpx.streamlit.app/"
+          githubUrl="https://github.com/maruciprian99/eda"
           
         />
         <ProjectsCard
