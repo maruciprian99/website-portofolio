@@ -26,7 +26,7 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
                 <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
                 <div className="flex gap-4">
-                <a href="https://www.linkedin.com/in/ionut-ciprian-maru-bb55951b9/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+                <a href="https://www.linkedin.com/in/ionu%C8%9B-ciprian-m%C4%83ru-bb55951b9/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
                     <FaLinkedinIn />
                   </a>
                   <a href="https://github.com/maruciprian99" target="_blank" rel="noopener noreferrer" className="bannerIcon">
