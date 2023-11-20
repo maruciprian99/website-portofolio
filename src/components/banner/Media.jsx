@@ -34,7 +34,7 @@ const Media = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://www.linkedin.com/in/ionut-ciprian-maru-bb55951b9/"
+            href="https://www.linkedin.com/in/ionu%C8%9B-ciprian-m%C4%83ru-bb55951b9/"
             target="_blank"
             rel="noopener noreferrer"
             className="bannerIcon"
